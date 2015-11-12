@@ -3,12 +3,26 @@ With the availability of genomic data on large cohorts of well-phenotyped indivi
 That is, when testing a genetic variants for association with two traits, are the effects of these genetic variants on the two traits correlated? 
 </p>
 <p>
-These are now simple, easy-to-use software packages for calculating these genetic correlations (<a href="https://github.com/bulik/ldsc">e.g.</a>), and it is now clear that many traits show some evidence for genetic correlation. 
-For example, the personality trait "neuroticism" is genetically correlated to major depressive disorder, and cognitive performance (formerly known as "IQ") is negatively genetically correlated to BMI.   
+These are now simple, easy-to-use software packages for calculating
+these genetic correlations (<a
+href="https://github.com/bulik/ldsc">e.g.</a>), and it is now clear
+that many traits show some evidence for genetic correlation. For
+example, the personality trait "neuroticism" is genetically correlated
+to major depressive disorder, and cognitive performance (formerly
+known as "IQ") is negatively genetically correlated to BMI.
+
 </p> 
 
 <p>
-How can we interpret these results? 
+How can we interpret these results? Quantative geneticists have known
+for a long time that genetic correlations arise for a variety of
+related reasons. It is tempting to see the genetic correlations found
+by GWAS approaches as side-stepping these issues. Indeed if done well
+they can indeed by-pass the shared environment concerns that always
+dogged family-based assessments of genetic correlations. However, the
+deeper issue that genetic correlations can arise through parental
+effects and assortative mating we believe has perhaps not gone away.
+
 We start with the two most commonly-interpretations (putting aside obvious technical artifacts like shared population statification), and then discuss two additional possibilities, rarely directly tested, that merit further investigation.
 </p>
 
@@ -23,19 +37,72 @@ We start with the two most commonly-interpretations (putting aside obvious techn
 2. Causality. For example, LDL and heart disease are postively genetically correlated.
 </p>
 
-These two explanations of a genetic correlation are of course plausble. 
+GRAHAM:So I'm always confused by this distinction. I see pleiotropy
+simply that alleles affect multiple traits. Some distinctions of
+pleiotropy say affect unrelated traits. But to my mind that unrelated
+is just a statement of ignorance. E.g. your AAM \& baldness are very
+related traits if we view both as being hormonal. See here for some discussion:
+http://www.genetics.org/content/186/3/767.full
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3558540/
+to my mind causality is just a subset of pleitropy, but perhaps I'm
+misunderstanding something. It's also not obvious that these are
+distinct, when I factor in many variants (e.g. a genomes worth). E.g. do all
+LDL variants in the genome increase heart-disease, or only the subset
+of strongest SNPs we've looked at to date? E.g. does a variant that makes me more likely
+to exercise impact heart disease only via LDL or can it affect both traits? If I have heart diesase
+am I more careful about my LDL, so that all heart diease SNPS are LDL
+SNPs (if LDL is measured throughout life) but what differs is the
+strength of the effect size. All these things are present in genetic
+correlations to my mind.
+
+These two explanations of a genetic correlation are of course plausible. 
+
+Note that the pleiotropy we see as quantitative geneticists can be
+mediated through environmental effects. It is simply a statement that
+alleles affect multiple traits, not that those shared effects have
+simple "molecular" basis.  
+
 Some other models also seem quite plausible; the relative importance of these different models remains to be seen. 
 <p>
-3. Parental effects. For example, imagine that having a depressed parent increases the "neuroticism" of their children. This would be detected as a genetic correlation, though the causal connection between the variant and the two traits is less direct than in the previous two situations. 
-Example: folate levels and neural tube defects?
+3. Parental effects. For example, imagine that having a depressed
+parent increases the "neuroticism" of their children.
+This would be detected as a genetic correlation, though the causal connection between the variant and the two traits is less direct than in the previous two situations. 
+Example: folate levels and neural tube defects? NICE EG. WE COULD ALSO
+INCLUDE ONE (e.g. made up) THAT'S more obviously mediated through the
+parental external environment.
+
 </p>
 
 <p>
-4. Assortative mating. For example, imagine individuals with higher IQ tend to marry individuals with lower BMI. i
-This induces a genetic correlation between the traits. 
-This is perhaps the most worrying of the causes for a genetic correlation, in that in this case there is no causal connection between the variant and both traits. 
+4. Assortative mating. For example, imagine individuals with higher IQ tend to
+marry individuals with lower BMI. This induces a genetic correlation
+between the traits, even if there is no 
+What is happening is that the alleles that are associated with both
+traits co-occur in the same individuals (the offspring of these
+assortative mating parents). This is a form of linkage disequibrium
+between the loci underlying the same traits (even if the loci are not
+genetically linked). If assortative mating
+continues over multiple generations this effect can build to an
+equilibrium level of genetic correlation between the two traits (Crow
+and Kimura).
+
+This is perhaps the most worrying of the causes for a genetic
+correlation, in that in this case there is no causal connection
+between the variant and both traits.
+GRAHAM: Mostly agrees, but also playing devils avocado thinks that on some level that these
+might not be any more spurious than some of the others, given that all of the causality of the others can arise due to
+individuals associating with particular environments. 
 </p>
 
 How to determine the relative contributions of these latter two causes of genetic correlation? 
-Family studies could help. 
+Family studies could help.
+GRAHAM say: there was a height study you tweeted that did this.
 Also would be useful to have some theory about what parameter regimes could potentially lead to signals; this could be compared to observations in humans. 
+
+Note that while we have explained all of these effects in terms of
+genetic covariance, they can also contribute to inflating the additive
+genetic variance contributed by a trait. For example, couples
+assortative mate by height, therefore, alleles contributing to tallness tend to be present
+in taller individuals even more than we would predict from their
+'true' effect size. Therefore, the effect sizes of alleles may be
+mildly overestimated by this effect. 
