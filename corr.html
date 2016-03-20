@@ -7,14 +7,27 @@ These are now simple, easy-to-use software packages for calculating
 these genetic correlations (<a
 href="https://github.com/bulik/ldsc">e.g.</a>), and it is now clear
 that many traits show some evidence for genetic correlation.
-For example, height is genetically correlated
+For example,  LDL cholesterol and risk
+coronary artery disease are genetically correlated REF. The most obvious interpretation of
+genetic correlations is as a result of pleiotropy, that alleles
+affecting one trait have on average an affect on a second trait. 
+This intepretation can shed powerful light on the shared genetic basis
+of phenotypes, and can also allow the dissection of casual
+relationships among phenotypes (through approaches such as Mendelian
+Randomization REF). 
+Increasingly we will be faced with genetic correlations that are
+complex to understand and may have multiple casual underpinnings, 
+for example height is genetically correlated
 to socioecomonic status, and cognitive performance (formerly
 known as "IQ") is negatively genetically correlated to BMI.
 
 </p> 
 
 <p>
-How can we interpret these results? Quantative geneticists have known
+Often in describing these correlations they are simply referred to as
+genetic correlations thereby avoiding the issue of specifying how
+they arise, however, in some cases genetic correlations are just directly referred to
+as pleiotropy. However, Quantative geneticists have known
 for a long time that genetic correlations arise for a variety of
 related reasons. It is tempting to see the genetic correlations found
 by GWAS approaches as side-stepping these issues. Indeed if done well
@@ -22,6 +35,8 @@ they can indeed bypass the shared environment concerns that always
 dogged family-based assessments of genetic correlations. However, the
 deeper issue that genetic correlations can arise through parental
 effects and assortative mating we believe has perhaps not gone away.
+
+
 </p>
 
 <p>
@@ -35,26 +50,6 @@ In this post, we want to discuss some of the possible interpretations of a genet
 <p>
 2. "Mediated" pleiotropy. In this situation, one traits is directly causally influence by another. This of course means that any genetic variant that influences the first phenotype will have knock-on effects on the second. The classic example here is LDL cholesterol and heart disease: these two traits are postively genetically correlated, and it is now widely accepted that this correlation is due to a causal effect of LDL on risk of developing disease. Identifying this situation is has important medical implications: since LDL is causal for heart disease, then any intervention that influences LDL (for example, a drug or an altered diet) should have an effect on someone's risk of heart disease. 
 </p>
-
-GRAHAM:So I'm always confused by this distinction. I see pleiotropy
-simply that alleles affect multiple traits. Some distinctions of
-pleiotropy say affect unrelated traits. But to my mind that unrelated
-is just a statement of ignorance. E.g. your AAM \& baldness are very
-related traits if we view both as being hormonal. See here for some discussion:
-http://www.genetics.org/content/186/3/767.full
-http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3558540/
-to my mind causality is just a subset of pleitropy, but perhaps I'm
-misunderstanding something. It's also not obvious that these are
-distinct, when I factor in many variants (e.g. a genomes worth). E.g. do all
-LDL variants in the genome increase heart-disease, or only the subset
-of strongest SNPs we've looked at to date? E.g. does a variant that makes me more likely
-to exercise impact heart disease only via LDL or can it affect both traits? If I have heart diesase
-am I more careful about my LDL, so that all heart diease SNPS are LDL
-SNPs (if LDL is measured throughout life) but what differs is the
-strength of the effect size. All these things are present in genetic
-correlations to my mind.
-
-JOE: yes good point, that's a bit sloppy. some people call these things "mediated pleiotropy" and "biological pleiotropy", e.g. http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4104202/ Not sure if that's become standard in the field or if there's some better nomenclature. Re: LDL and heart disease, I think the prediction is that all LDL variants in the genome increase heart disease risk, though it's true we're only looked at the top hits.
 
 
 These two explanations of a genetic correlation are of course plausible. 
@@ -91,9 +86,6 @@ and Kimura).
 This is perhaps the most worrying of the causes for a genetic
 correlation, in that in this case there is no causal connection
 between the variant and both traits.
-GRAHAM: Mostly agrees, but also playing devils avocado thinks that on some level that these
-might not be any more spurious than some of the others, given that all of the causality of the others can arise due to
-individuals associating with particular environments. 
 </p>
 
 How to determine the relative contributions of these latter two causes of genetic correlation? 
