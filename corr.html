@@ -31,10 +31,11 @@ correlations; this avoids the issue of specifying how
 they arise. In some cases, though, genetic correlations are directly referred to
 as pleiotropy. However, quantative geneticists have known
 for a long time that genetic correlations arise for a variety of
-related reasons [REF?]. It is tempting to see the genetic correlations found
+related reasons (<a href="http://www.jstor.org/stable/2331507?origin=crossref&seq=1#page_scan_tab_contents">e.g.</a>). It is tempting to see the genetic correlations found
 by GWAS approaches as side-stepping these long-discussed issues. Indeed, if done well
-they can indeed bypass some concerns (e.g. that correlations between phenotypes within families could be driven a shared environment). However, the
-deeper issue that genetic correlations can arise through multiple mechanisms has not gone away.
+they can indeed bypass some concerns (e.g. that correlations between
+phenotypes within families could be driven a shared
+environment). However, the deeper issue that genetic correlations can arise through multiple mechanisms has not gone away.
 </p>
 
 <p>
@@ -42,12 +43,12 @@ deeper issue that genetic correlations can arise through multiple mechanisms has
 </p>
 
 <p>
-1. "Biological" pleiotropy. In this situation, genetic variants that influence one trait also influence another because of some shared underlying biology. For example, genetic variants that influence age at menarche in women have correlated effects on male pattern baldness. Presumably this is because there are some shared hormonal pathways that influence both of these traits, such that altering these pathways has effects on multiple traits. 
+<b>1. "Biological" pleiotropy.</b> In this situation, genetic variants that influence one trait also influence another because of some shared underlying biology. For example, genetic variants that influence age at menarche in women have correlated effects on male pattern baldness. Presumably this is because there are some shared hormonal pathways that influence both of these traits, such that altering these pathways has effects on multiple traits. 
 </p>
 
 <img src="biological_pl.png" alt="Biological pleiotropy" height="50%">
 <p>
-2. "Mediated" pleiotropy. In this situation, one trait is directly causally influenced by another. This of course means that a genetic variant that influences the first phenotype will have knock-on effects on the second. The classic example here is LDL cholesterol and heart disease: these two traits are postively genetically correlated, and it is now widely accepted that this correlation is due to a causal effect of LDL on risk of developing disease. Identifying this situation is has important medical implications: since LDL is causal for heart disease, then a non-genetic intervention that influences LDL (for example, a drug or an altered diet) should have an effect on someone's risk of heart disease. 
+<b>2. "Mediated" pleiotropy</b>. In this situation, one trait is directly causally influenced by another. This of course means that a genetic variant that influences the first phenotype will have knock-on effects on the second. The classic example here is LDL cholesterol and heart disease: these two traits are postively genetically correlated, and it is now widely accepted that this correlation is due to a causal effect of LDL on risk of developing disease. Identifying this situation is has important medical implications: since LDL is causal for heart disease, then a non-genetic intervention that influences LDL (for example, a drug or an altered diet) should have an effect on someone's risk of heart disease. 
 </p>
 
 <img src="mediated_pl.png" height="50%" alt="Mediated pleiotropy">
@@ -61,15 +62,21 @@ between height and socioecomonic status that fits a model of "mediated" pleiotro
 These two explanations of a genetic correlation are of course plausible. Some other models also seem quite plausible; the relative importance of these different models remains to be seen. 
 </p>
 <p>
-3. Parental effects. For example, imagine that more educated parents
+<b>3. Parental effects.</b> For example, imagine that more educated parents
 pay more attention to the diets of their children, and thus their
-children have lower rates of obesity. This would be detected in GWAS as a genetic correlation between educational attainment and obesity, though the causal connection between the variant and the two traits is less direct than in the previous two situations. 
+children have lower rates of obesity. This would be detected in GWAS
+as a genetic correlation between educational attainment and obesity,
+though the causal connection between the variant and the two traits is
+less direct than in the previous two situations. Parental effects
+can be termed pleiotropy, but importantly the effect is due to the
+parental genotype, and not that of the child, and so it can be distinguished from
+within-generation pleiotropy (see below).  
 </p>
 
 <img src="parental.png" alt="Parental effects" height="50%">
 
 <p>
-4. Assortative mating. For example, imagine more taller individuals
+<b>4. Assortative mating.</b> For example, imagine more taller individuals
 tend to marry individuals with higher socioecomonic status. This would
 induce a genetic correlation between the traits. What is happening is
 that the alleles that associated with both traits co-occur in the same
@@ -80,7 +87,7 @@ parents).
 <p>
 To illustrate this point, we simulated two traits that share no
 pleiotropic genetic variants in common with 100 unlinked loci each. We
-simulated positive assortative mating for a single generation [2]. We then plotted the
+simulated cross-trait positive assortative mating for a single generation [2]. We then plotted the
 effect sizes of the variants casually affecting trait 1 against these perceived
 affect of these loci on trait 2, as estimated from a sample of
 100k children. There is a clear relationship induced by even a single generation of assortative mating.   
@@ -89,8 +96,9 @@ affect of these loci on trait 2, as estimated from a sample of
 When alleles that increase both traits are brought together in the
 offspring this induces a form of linkage disequibrium (LD) between the loci
 underlying the same traits (even if the loci are not genetically
-linked). If assortative mating continues over multiple generations
-this LD effect is compounded and builds to an equilibrium level of genetic correlation between the two traits (Crow and Kimura).
+linked). If this assortative mating continues over multiple generations
+this LD effect is compounded and builds to an equilibrium level of
+genetic correlation between the two traits (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24270615">Gianola 1982</a>).
 </p>
 
 <img src="Assortative_mating_effect_corr.png" alt="Assortative mating 1" height="50%">
@@ -108,15 +116,20 @@ estimated.This would allow for the genetic effect of assortative
 mating to the assessed. Although we note that even if assortative
 mating is absent in the parental generation, genetic correlations
 from previous generations of assortative mating could be present (as
-they decay through meiotic segregation and recombination).  
-</p>
-<p>
+they decay through meiotic segregation and recombination).
+
 Similarly, parental effects can be tested by estimating polygenic
-scores for parent and child, see e.g. <a href="http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001865">Zhang et al.</a>
+scores for parent and child, see e.g. <a
+href="http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001865">Zhang
+et al.</a>, the contribution of parental and child's genotype can then
+we assessed,
 </p>
 
 <p>
-Overall, the study of genetic correlations using GWAS data has opened up a number of interesting directions for future work; new methods and analyses are needed to distinguish among these various causes of genetic correlation (and of course, there are presumably other causes we've not thought of here!).
+Overall, the study of genetic correlations using GWAS data has opened
+up a number of interesting directions for future work; new methods and
+analyses are needed to distinguish among these various causes of
+genetic correlation (and of course, others we have not discussed here).
 </p>
 <p>
 ---
